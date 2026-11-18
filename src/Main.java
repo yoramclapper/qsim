@@ -1,6 +1,9 @@
 class Main {
     public static void main(String[] args) {
-        QueueSystem queueSystem = new QueueSystem(100, 100, 2, 1, 10);
-        queueSystem.run();
+        int timeHorizon = 100;
+        int popSize = 100;
+        int serversNr = 1;
+        QSystem qSystem = new QSystem(timeHorizon, popSize, serversNr);
+        qSystem.run();
     }
 }
