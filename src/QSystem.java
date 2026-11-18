@@ -26,12 +26,23 @@ public class QSystem {
         }
     }
 
+    private void handleNextEvent() {
+        // getTimeToCompletion
+        // getTimeToArrival
+        // if timeToCompletion < timeToArrival
+        //     if queue is nonempty:
+        //         pop customer from queue
+        //         renew timeToCompletion
+        //     else
+        //        set server to idle
+        // else
+        //     move customer from customers to queue
+        // update time
+    }
+
     public void run() {
         while (this.time < this.timeHorizon) {
-            System.out.print(this.time);
-            this.time++;
-
-            System.out.print("\n");
+            // handleNextEvent();
         }
     }
 }
